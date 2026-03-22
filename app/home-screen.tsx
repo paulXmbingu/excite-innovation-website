@@ -1,8 +1,7 @@
 "use client";
 
-import React from "react";
 import { LogoMark } from "@/components/logos/logo-mark"
-// import { Button } from "@/components/base/buttons/button";
+import { Button } from "@/components/ui/button";
 // import { LinkedIn, Instagram, X, YouTube } from "@/components/foundations/social-icons";
 import type { Metadata } from "next";
 
@@ -10,7 +9,6 @@ export const metadata: Metadata = {
   title: "Excite! Innovation",
   description: "Premier digital product innovation company specializing in UIUX Research, Design & Software Engineering",
 };
-
 
 export const HomeScreen = () => {
   return (
