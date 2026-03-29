@@ -1,9 +1,11 @@
 "use client";
 
-import { LogoMark } from "@/components/logos/logo-mark"
-import { Button } from "@/components/ui/button";
-// import { LinkedIn, Instagram, X, YouTube } from "@/components/foundations/social-icons";
 import type { Metadata } from "next";
+import Link from "next/link";
+import { LogoMark } from "@/components/logos/logo-mark"
+import { Button } from "@/components/ui/button"
+import { SiInstagram, SiX, SiYoutube, } from '@icons-pack/react-simple-icons';
+import { FaLinkedin } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Excite! Innovation",
@@ -53,48 +55,31 @@ export const HomeScreen = () => {
             {/* Social CTA */}
             <div className="flex flex-col items-center gap-0 w-full">
               <div className="text-gray-600">Follow us on our socials</div>
-              {/* <div className="flex flex-wrap items-center justify-center gap-1">
-                <Button 
-                  color="tertiary"
-                  size="sm"
-                  iconLeading={<LinkedIn/>}
-                  aria-label="Excite! Innovation LinkedIn button"
-                  className="text-fg-quaternary hover:text-[#0a66c2]"
-                  href="https://www.linkedin.com/company/exciteinnovation"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                />
-                <Button 
-                  color="tertiary"
-                  size="sm"
-                  iconLeading={<Instagram/>}
-                  aria-label="Excite! Innovation Instagram button"
-                  className="text-fg-quaternary hover:text-[#ff7a00]"
-                  href="https://www.instagram.com/excitecompany"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                />
-                <Button 
-                  color="tertiary"
-                  size="sm"
-                  iconLeading={<X/>}
-                  aria-label="Excite! Innovation Twitter button"
-                  className="text-fg-quaternary hover:text-[#1d9bf0]"
-                  href="https://www.twitter.com/excitecompany"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                />
-                <Button 
-                  color="tertiary"
-                  size="sm"
-                  iconLeading={<YouTube/>}
-                  aria-label="Excite! Innovation YouTube button"
-                  className="text-fg-quaternary hover:text-[#FF0000]"
-                  href="https://www.youtube.com/@ExciteInnovation"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                />
-              </div> */}
+              <div className="flex flex-wrap items-center justify-center gap-1">
+                <Button variant="ghost" size="icon-lg" asChild>
+                  <Link href="https://www.linkedin.com/company/exciteinnovation" target="_blank" rel="noopener noreferrer" aria-label="Excite Innovation on LinkedIn" >
+                    <FaLinkedin className="size-5 text-[#0A66C2]" />
+                  </Link>
+                </Button>
+
+                <Button variant="ghost" size="icon-lg" asChild>
+                  <Link href="https://www.instagram.com/excitecompany" target="_blank" rel="noopener noreferrer" aria-label="Excite Innovation on Instagram">
+                    <SiInstagram className="size-5 text-[#FF0069]" />
+                  </Link>
+                </Button>
+
+                <Button variant="ghost" size="icon-lg" asChild>
+                  <Link href="https://www.twitter.com/excitecompany" target="_blank" rel="noopener noreferrer" aria-label="Excite Innovation on X">
+                    <SiX className="size-5 text-black dark:text-white" />
+                  </Link>
+                </Button>
+
+                <Button variant="ghost" size="icon-lg" asChild>
+                  <Link href="https://www.youtube.com/@ExciteInnovation" target="_blank" rel="noopener noreferrer" aria-label="Excite Innovation on YouTube">
+                    <SiYoutube className="size-5 text-[#FF0000]" />
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
