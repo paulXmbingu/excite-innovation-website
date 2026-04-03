@@ -2,6 +2,7 @@ import "./globals.css"
 import { Geist, Geist_Mono, Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils";
+import Script from "next/script"; // 👈 added
 
 export const metadata = {
   metadataBase: new URL("https://excite.limited"),
@@ -64,6 +65,21 @@ export default function RootLayout({
       className={cn("antialiased", fontMono.variable, "font-sans", inter.variable)}
     >
       <body>
+
+        {/* 👇 Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-4FZR1ES23B"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-4FZR1ES23B');
+          `}
+        </Script>
+
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
