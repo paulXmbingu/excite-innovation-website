@@ -35,14 +35,14 @@ export const HomeScreen = () => {
 
       {/* Details Section */}
       <div className="relative z-10 flex h-1/2 w-full md:h-full md:w-1/2 items-center justify-center px-4 py-8 md:px-12">
-        <div className="flex max-w-140 flex-col items-center justify-center gap-8">
+        <div className="flex max-w-140 flex-col items-center justify-center gap-1">
           {/* Logo */}
           <div className="relative m-6 flex w-48 items-center justify-center md:w-72 lg:w-80">
             <LogoMark />
           </div>
 
           {/* Text CTA */}
-          <div className="flex flex-col items-center gap-8 w-full">
+          <div className="flex flex-col items-center gap-4 w-full">
             <div className="flex w-full flex-col items-center gap-0">
               <div className="text-center text-base text-alpha-black">
                 Premier digital product innovation company specializing in
