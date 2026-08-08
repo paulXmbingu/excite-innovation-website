@@ -9,7 +9,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Excite! Innovation",
-  description: "Premier digital product innovation company specializing in UIUX Research, Design & Software Engineering",
+  description: "Premier digital product innovation company specializing in UIUX Research, Design, Software Development & AI Engineering",
 };
 
 export const HomeScreen = () => {
