@@ -48,7 +48,7 @@ export const HomeScreen = () => {
                 Premier digital product innovation company specializing in
               </div>
               <div className="text-center text-3xl font-bold tracking-tight text-brand-secondary sm:text-2xl md:text-4xl">
-                UIUX Research, Design & Software Engineering
+                UIUX Research, Product Design, Software Development & AI Engineering
               </div>
             </div>
 
